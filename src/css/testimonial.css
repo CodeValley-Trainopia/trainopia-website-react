@@ -1,0 +1,49 @@
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+.testimonial {
+  position: relative;
+}
+.testo-bottom {
+  bottom: 0;
+  right: 0;
+}
+.testimonial .testimonial-content {
+  padding: 35px 25px 35px 50px;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+
+  position: relative;
+}
+.testimonial .testimonial-content:after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  position: absolute;
+  bottom: -10px;
+  left: 22px;
+  transform: rotate(45deg);
+}
+
+.testimonial-content .testimonial-icon {
+  border-radius: 4px;
+
+  background: #0d6efd;
+  text-align: center;
+  font-size: 22px;
+  color: #ffffff;
+  line-height: 42px;
+  position: absolute;
+  top: 37px;
+  left: -19px;
+}
+.testimonial-content .testimonial-icon:before {
+  content: '';
+  border-bottom: 16px solid #0052cc;
+  border-left: 18px solid transparent;
+  position: absolute;
+  top: -15px;
+  left: 1px;
+  border-radius: 0px 2px 0px 1px;
+  z-index: -1;
+}

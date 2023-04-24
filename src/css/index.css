@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: bebas;
+  src: url(/fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: dinar;
+  src: url(/fonts/GE-Dinar-One-Medium.otf);
+}
+/* font-family: 'Lateef', serif; */
+.darkmode-toggle {
+  z-index: 5;
+}
+@layer base {
+  html {
+    font-family: bebas, dinar;
+  }
+}
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+#footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#root {
+  padding-bottom: 200px;
+  min-width: 300px;
+}
+nav {
+  padding: 3rem;
+}
+@media (min-width: 1024px) {
+  nav {
+    padding-left: 15rem /* 192px */;
+    padding-right: 15rem /* 192px */;
+  }
+}
+@media (min-width: 900px) {
+  nav {
+    padding-left: 9rem /* 112px */;
+    padding-right: 9rem /* 112px */;
+  }
+}
+.curve {
+  border-radius: 59% 39% 55% 45% / 66% 45% 77% 34%;
+}
+.popUp {
+  opacity: 60%;
+  background-color: rgb(11, 12, 12);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close {
+  font-size: 90px;
+  font-weight: 600;
+}
+.wavy {
+  height: 87vh;
+  padding-bottom: 10%;
+}
+.wavy::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 130px;
+  background: url('/images/home/wave.png');
+  background-size: 100% 130px;
+  background-repeat: no-repeat;
+}
+
+.btn-sty {
+  cursor: pointer;
+  outline: 0;
+  color: #fff;
+  background-color: #b58618;
+  border-color: #0d6efd;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+.btn-sty:hover {
+  color: #fff;
+  background-color: #fdb813;
+  border-color: #0a58ca;
+}
