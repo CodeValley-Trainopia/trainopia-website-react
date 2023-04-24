@@ -15,7 +15,7 @@ const ServiceCard = ({ img, title, content, color, logo, animation }: Props) => 
     AOS.init();
   }, []);
   return (
-    <div className="mb-6 px-6 mx-auto " data-aos={animation} data-aos-duration={500}>
+    <div className="mb-6 px-6 mx-auto " data-aos={animation} data-aos-duration={500} data-aos-once={true}>
       <div className="block rounded-lg shadow-lg">
         <div className="flex flex-wrap ">
           <div className="hidden md:flex grow-0 shrink-0 basis-auto md:w-4/12">
