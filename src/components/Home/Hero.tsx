@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { HomeData } from './HomeData';
 const Hero = () => {
   const [playVideo, setPlayVideo] = useState(false);
   return (
@@ -9,10 +9,7 @@ const Hero = () => {
         <h1 className="text-2xl 2xl:text-6xl lg:text-4xl  ">
           بهجة الاستعداد لرمضان <br className={`hidden nav:block`} /> غير
         </h1>
-        <p className="text-xl py-12 ">
-          الناس في الشوارع وهم متجمعين وبيعلقوا الزينة وبيسلموا على بعض وهم مبسوطين وكأن نسمات رمضان بتدخل وبتنشر الود
-          والمحبة
-        </p>
+        <p className="text-xl py-12 ">{HomeData.hero.ar.des}</p>
         <button className="text-2xl btn-sty w-32">اعرف اكتر</button>
       </div>
       {/* video container */}

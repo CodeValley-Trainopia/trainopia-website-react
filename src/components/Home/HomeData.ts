@@ -4,7 +4,12 @@ export class HomeData {
     { image: '/images/home/2.jpg' },
     { image: '/images/home/3.jpg' }
   ];
-
+  static hero = {
+    ar: {
+      header: '',
+      des: 'الناس في الشوارع وهم متجمعين وبيعلقوا الزينة وبيسلموا على بعض وهم مبسوطين وكأن نسمات رمضان بتدخل وبتنشر الود والمحبة '
+    }
+  };
   static events = {
     events_title: {
       ar: `اهم الفعاليات القادمة`,
@@ -205,26 +210,32 @@ export class HomeData {
       // }
     ]
   };
-  static achievements = [
-    {
-      image: '/icons/smile_face.png',
-      score: '400',
-      title: 'Happy Customers'
+  static achievements = {
+    achievementsTitle: {
+      ar: 'انجازاتنا',
+      en: 'Our Achievements'
     },
-    {
-      image: '/icons/smile_face.png',
-      score: '400',
-      title: 'Happy Customers'
-    },
-    {
-      image: '/icons/smile_face.png',
-      score: '400',
-      title: 'Happy Customers'
-    },
-    {
-      image: '/icons/smile_face.png',
-      score: '400',
-      title: 'Happy Customers'
-    }
-  ];
+    achievementsData: [
+      {
+        image: '/icons/smile_face.png',
+        score: '400',
+        title: 'Happy Customers'
+      },
+      {
+        image: '/icons/smile_face.png',
+        score: '400',
+        title: 'Happy Customers'
+      },
+      {
+        image: '/icons/smile_face.png',
+        score: '400',
+        title: 'Happy Customers'
+      },
+      {
+        image: '/icons/smile_face.png',
+        score: '400',
+        title: 'Happy Customers'
+      }
+    ]
+  };
 }
