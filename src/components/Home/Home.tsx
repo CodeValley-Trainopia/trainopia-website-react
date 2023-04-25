@@ -1,5 +1,3 @@
-import HomeCarousel from './HomeCarousel';
-import HomeVideo from './HomeVideo';
 import HomeEventCards from './HomeEventCards';
 import HomeTestimonial from './HomeTestimonial';
 import HomeService from './HomeService';
@@ -8,6 +6,7 @@ import NavBar from '../Shared/Navbar';
 import { useEffect } from 'react';
 import { Achievements } from './Achievements';
 import Footer from '../Shared/Footer';
+import { Media } from './Media';
 interface Props {
   IsRTL: string;
   ShowSpecialNav: (x: boolean) => void;
@@ -28,8 +27,7 @@ const HomeComponent = ({ IsRTL, ShowSpecialNav }: Props) => {
         <Hero />
       </div>
       <Achievements />
-      {/* <HomeVideo />
-      <HomeCarousel IsRTL={IsRTL} /> */}
+      <Media />
       <HomeEventCards />
       <HomeService />
       <HomeTestimonial />

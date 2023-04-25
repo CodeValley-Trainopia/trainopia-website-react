@@ -8,7 +8,6 @@ import { useRef } from 'react';
 import Bar from '../Shared/Bar';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 const HomeTestimonial = () => {
   const swiperRef1 = useRef<SwiperCore>();

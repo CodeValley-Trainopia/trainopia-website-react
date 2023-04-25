@@ -1,0 +1,104 @@
+@black: #262626;
+.btn:hover {
+  color: #fdb813;
+}
+.btn {
+  color: black;
+  cursor: pointer;
+}
+.wrapper {
+  margin: 10px;
+  position: relative;
+  color: #000;
+
+  .button {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    border-width: 0px;
+  }
+
+  .border {
+    background: @black;
+  }
+
+  .top {
+    border-color: white;
+    position: absolute;
+    top: 0px;
+    width: 0;
+    height: 2px;
+    margin: auto;
+    transition: all 0.2s linear 0.3s;
+  }
+
+  &:active .top {
+    border-color: #fdb813;
+    width: 100%;
+    transition: all 0.2s linear;
+  }
+
+  .right {
+    border-color: white;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 0;
+    margin: auto;
+    transition: all 0.1s linear 0.2s;
+  }
+
+  .left {
+    border-color: white;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0;
+    margin: auto;
+    transition: all 0.1s linear 0.2s;
+  }
+
+  &:active .right,
+  &:active .left {
+    border-color: #fdb813;
+
+    transition: all 0.1s linear 0.2s;
+    height: 100%;
+  }
+
+  .bottom-left {
+    border-color: white;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    margin: auto;
+    transition: all 0.2s linear;
+  }
+
+  .bottom-right {
+    border-color: white;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: px;
+    margin: auto;
+    transition: all 0.2s linear;
+  }
+
+  &:active .bottom-left,
+  &:active .bottom-right {
+    border-color: #fdb813;
+
+    transition: all 0.2s linear 0.3s;
+    width: 100%;
+  }
+}

@@ -26,6 +26,7 @@ html {
 body {
   position: relative;
   min-height: 100vh;
+  background-color: #f8f8f8;
 }
 
 #footer {
@@ -73,7 +74,7 @@ nav {
   font-weight: 600;
 }
 .wavy {
-  height: 87vh;
+  height: 86vh;
   padding-bottom: 10%;
 }
 .wavy::before {

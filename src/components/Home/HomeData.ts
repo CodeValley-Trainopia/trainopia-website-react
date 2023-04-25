@@ -238,4 +238,24 @@ export class HomeData {
       }
     ]
   };
+  static media = {
+    mediaTitle: {
+      ar: 'مرئيات',
+      en: ''
+    },
+    mediaTypes: {
+      audioes: {
+        ar: 'صوتيات',
+        en: 'Audio'
+      },
+      videos: {
+        ar: 'فيديو',
+        en: 'Video'
+      },
+      images: {
+        ar: 'صور',
+        en: 'Images'
+      }
+    }
+  };
 }

@@ -3,7 +3,7 @@ import { HomeData } from './HomeData';
 const Hero = () => {
   const [playVideo, setPlayVideo] = useState(false);
   return (
-    <div className="b wavy relative w-full flex flex-col items-center  nav:flex-row nav:justify-between    bg-bottom  px-6 nav:px-36  pb-[10%] h-[87hv] text-white ">
+    <div className=" wavy relative w-full flex flex-col items-center  nav:flex-row nav:justify-between    bg-bottom  px-6 nav:px-36  pb-[10%] h-[87vh] text-white ">
       {/* bio content */}
       <div className="nav:w-[50%] w-[80%] my-10 text-center flex flex-col justify-center items-center">
         <h1 className="text-2xl 2xl:text-6xl lg:text-4xl  ">
