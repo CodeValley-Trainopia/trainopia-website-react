@@ -256,6 +256,82 @@ export class HomeData {
         ar: 'صور',
         en: 'Images'
       }
+    },
+    content: {
+      images: [
+        {
+          imagePath: '/images/home/header-1.jpg',
+          imageURL: ''
+        },
+        {
+          imagePath: '/images/home/header-1.jpg',
+          imageURL: ''
+        },
+        {
+          imagePath: '/images/home/header-1.jpg',
+          imageURL: ''
+        },
+        {
+          imagePath: '/images/home/header-1.jpg',
+          imageURL: ''
+        },
+        {
+          imagePath: '/images/home/header-1.jpg',
+          imageURL: ''
+        },
+        {
+          imagePath: '/images/home/header-1.jpg',
+          imageURL: ''
+        },
+        {
+          imagePath: '/images/home/header-1.jpg',
+          imageURL: ''
+        }
+      ],
+      audioes: [
+        {
+          imagePath: '/images/home/1.jpg',
+          audioURL: ''
+        },
+        {
+          imagePath: '/images/home/1.jpg',
+          audioURL: ''
+        },
+        {
+          imagePath: '/images/home/1.jpg',
+          audioURL: ''
+        },
+        {
+          imagePath: '/images/home/1.jpg',
+          audioURL: ''
+        },
+        {
+          imagePath: '/images/home/1.jpg',
+          audioURL: ''
+        }
+      ],
+      videos: [
+        {
+          imagePath: '/images/home/2.jpg',
+          videoURL: ''
+        },
+        {
+          imagePath: '/images/home/2.jpg',
+          videoURL: ''
+        },
+        {
+          imagePath: '/images/home/2.jpg',
+          videoURL: ''
+        },
+        {
+          imagePath: '/images/home/2.jpg',
+          videoURL: ''
+        },
+        {
+          imagePath: '/images/home/2.jpg',
+          videoURL: ''
+        }
+      ]
     }
   };
 }

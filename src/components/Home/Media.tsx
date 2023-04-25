@@ -7,6 +7,8 @@ import { useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+import { MdOutlineVideocam } from 'react-icons/md';
+
 export const Media = () => {
   const [active, setActive] = useState([0, 1, 0]);
   return (
@@ -23,20 +25,36 @@ export const Media = () => {
           {HomeData.media.mediaTypes.videos.ar}
         </AnimatedBtn>
       </div>
-      <div className="flex">
+      <div className="flex w-full">
         <Swiper
-          slidesPerView={3}
+          spaceBetween={10}
+          slidesPerView={5}
           freeMode={true}
           pagination={{
             clickable: true
           }}
           modules={[FreeMode, Pagination]}
-          className=""
+          className="w-10/12 flex gap-6"
         >
-          <MediaComponent />
-          <MediaComponent />
-          <MediaComponent />
-          <MediaComponent />
+          {active[0] &&
+            HomeData.media.content.audioes.map((item, index) => (
+              <SwiperSlide key={index} className=" my-14  ">
+                <div className="bg-blue-500 opacity-40"></div>
+                <img src={item.imagePath} alt="" />
+              </SwiperSlide>
+            ))}
+          {active[1] &&
+            HomeData.media.content.images.map((item, index) => (
+              <SwiperSlide key={index} className=" my-14 ">
+                <img src={item.imagePath} alt="" className="" />
+              </SwiperSlide>
+            ))}
+          {active[2] &&
+            HomeData.media.content.videos.map((item, index) => (
+              <SwiperSlide key={index} className=" my-14 ">
+                <img src={item.imagePath} alt="" />
+              </SwiperSlide>
+            ))}
         </Swiper>
       </div>
     </div>
@@ -44,5 +62,9 @@ export const Media = () => {
 };
 
 const MediaComponent = () => {
-  return <SwiperSlide>Slide 1</SwiperSlide>;
+  return (
+    <SwiperSlide>
+      <img src="/images/home/header-1.jpg" alt="" />
+    </SwiperSlide>
+  );
 };
