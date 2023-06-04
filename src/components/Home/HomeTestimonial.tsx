@@ -1,7 +1,7 @@
 import TestimonialCard from '../Shared/TestimonialCard';
 import { HomeData } from './HomeData';
 import type SwiperCore from 'swiper';
-import { Navigation, Scrollbar } from 'swiper';
+import { Navigation, Scrollbar, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { useRef } from 'react';
@@ -27,7 +27,8 @@ const HomeTestimonial = () => {
             swiperRef1.current = swiper;
           }}
           centeredSlides={true}
-          modules={[Navigation, Scrollbar]}
+          dir="rtl"
+          modules={[Navigation, Scrollbar, Autoplay]}
           scrollbar={{ draggable: true }}
           breakpoints={{
             640: { slidesPerView: 1 },

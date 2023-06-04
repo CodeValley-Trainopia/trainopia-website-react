@@ -6,11 +6,9 @@ const Hero = () => {
     <div className=" wavy relative w-full flex flex-col items-center  nav:flex-row nav:justify-between    bg-bottom  px-6 nav:px-36  pb-[10%] h-[87vh] text-white ">
       {/* bio content */}
       <div className="nav:w-[50%] w-[80%] my-10 text-center flex flex-col justify-center items-center">
-        <h1 className="text-2xl 2xl:text-6xl lg:text-4xl  ">
-          بهجة الاستعداد لرمضان <br className={`hidden nav:block`} /> غير
-        </h1>
+        <h1 className="text-2xl 2xl:text-6xl lg:text-4xl  ">فقط أن نظل نقاط نور</h1>
         <p className="text-xl py-12 ">{HomeData.hero.ar.des}</p>
-        <button className="text-2xl btn-sty w-32">اعرف اكتر</button>
+        {/* <button className="text-2xl btn-sty w-32">اعرف اكتر</button> */}
       </div>
       {/* video container */}
       <div className="curve border-8 grow nav:grow-0 flex w-[70%] nav:w-[40%] h-[50%] sm:max-h-[350px] max-h-[150px] ">

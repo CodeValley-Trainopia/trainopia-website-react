@@ -16,7 +16,7 @@ const EventCard = ({ link, image, text, title, animationDelay }: Props) => {
   }, []);
   return (
     <div
-      className="flex flex-col items-center drop-shadow-[0_35px_35px_rgba(0,0,0,0.35)] relative  m-5 data-aos-once "
+      className="flex flex-col aspect-[3/2] items-center drop-shadow-[0_35px_35px_rgba(0,0,0,0.35)] relative  m-5 data-aos-once "
       data-aos="slide-up"
       data-aos-duration={500}
       data-aos-delay={animationDelay}
@@ -24,11 +24,11 @@ const EventCard = ({ link, image, text, title, animationDelay }: Props) => {
       onMouseEnter={() => setHovered((prev) => !prev)}
       onMouseLeave={() => setHovered((prev) => !prev)}
     >
-      <div className={`rounded-t-2xl  bg-white w-full h-full 2xl:w-auto `}>
-        <div className={` opacity-25 ${hovered ? 'nav:opacity-25' : 'nav:opacity-100'}`}>
+      <div className={`rounded-t-2xl  bg-white w-full h-full 2xl:w-auto  `}>
+        <div className={` h-full w-full opacity-25 ${hovered ? 'nav:opacity-25' : 'nav:opacity-100'}`}>
           {image && link ? (
             <Link to={link}>
-              <img className="rounded-t-lg sm:h-48 lg:h-72 xl:h-80 2xl:h-96 w-full" src={image} alt="" />
+              <img className="rounded-t-lg h-full w-full object-cover" src={image} alt="" />
             </Link>
           ) : (
             <></>
