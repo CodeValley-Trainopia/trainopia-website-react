@@ -42,7 +42,7 @@ const EventCard = ({ link, image, text, title, animationDelay }: Props) => {
           ) : (
             <></>
           )}
-          <p className="text-gray-700 text-[14px] sm:text-sm md:text-base lg:text-lg 2xl:text-xl mb-4">{text}</p>
+          <p className="text-gray-700 text-[14px] sm:text-sm md:text-base lg:text-sm 2xl:text-xl mb-4">{text}</p>
         </div>
       </div>
       {link && (

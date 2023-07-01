@@ -13,7 +13,12 @@ export const Achievements = () => {
       <Bar title={HomeData.achievements.achievementsTitle.ar} symbol={'workspace_premium'} color={'text-red-600'}></Bar>
       <div className="flex justify-around flex-wrap  my-16  px-[10%] text-white ">
         {HomeData.achievements.achievementsData.map((e, index) => (
-          <div className="" data-aos="slide-up" data-aos-duration={500} data-aos-once={true}>
+          <div
+            className="w-[50%] min-w-[200px] md:w-[30%] mx-[1px]"
+            data-aos="slide-up"
+            data-aos-duration={500}
+            data-aos-once={true}
+          >
             <div className="flex flex-col justify-between items-center px-10 py-5 my-2 rounded-2xl text-center  h-[250px] bg-[#21212d] border-b-8 border-[#3fb855]">
               <p>{e.prevText}</p>
               <h1 className="text-6xl">

@@ -135,7 +135,7 @@ const NavBarContent = ({ IsRTL, active }: NavBarContentProps) => {
                 <li key={index}>
                   <Link
                     to={event.link}
-                    className="dropdown-item  block w-full whitespace-nowrap  py-2  px-4 text-sm text-gray-700 active:text-tr_primary md:text-lg"
+                    className="dropdown-item hover:bg-gray-200 block w-full whitespace-nowrap  py-2  px-4 text-sm text-gray-700 active:text-tr_primary md:text-lg"
                   >
                     {event.name}
                   </Link>

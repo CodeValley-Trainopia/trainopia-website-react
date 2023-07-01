@@ -26,6 +26,7 @@ const EventTarget = ({ event }: Props) => {
         <button>
           <HiChevronRight className="text-7xl" onClick={() => swiperRef1.current?.slidePrev()}></HiChevronRight>
         </button>
+        bu
         <Swiper
           onBeforeInit={(swiper) => {
             swiperRef1.current = swiper;
