@@ -11,7 +11,7 @@ import 'swiper/css';
 import ScrollToTop from './ScrollTop';
 import AboutUs from './components/aboutUs/AboutUs';
 import { useState } from 'react';
-
+//add anything
 function App() {
   const [home, setHome] = useState(false);
   const IsRTL = 'true';
