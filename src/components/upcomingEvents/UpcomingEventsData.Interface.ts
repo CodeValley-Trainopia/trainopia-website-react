@@ -30,5 +30,5 @@ export default interface IEvent {
   event_info: EventInfo
   event_goals: string[]
   prev: Prev
-  sample: Sample[]
+
 }
