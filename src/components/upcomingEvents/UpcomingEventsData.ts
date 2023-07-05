@@ -1,4 +1,6 @@
-const data = [
+import IEvent from "./UpcomingEventsData.Interface";
+
+const data :IEvent[] = [
   // {
   //   link: 'shakhabeet',
   //   mainImage: '/images/events/shakhabet.jpg',
