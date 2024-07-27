@@ -46,3 +46,4 @@
 // TODO [ ] : refactor the nav bar make it smaller
 // TODO [ ] : utilize semantic tags
 // TODO [ ] : make a custom hook for the screen size event listener
+
